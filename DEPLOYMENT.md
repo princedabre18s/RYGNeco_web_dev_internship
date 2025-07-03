@@ -119,6 +119,76 @@ This guide provides step-by-step instructions for deploying the Task Tracker app
    netlify deploy --prod --dir=build
    ```
 
+## 🎨 Render Deployment (Recommended)
+
+Render is a modern cloud platform that's perfect for React applications with free tier support.
+
+### Step-by-step Render Deployment
+
+1. **Push your code to GitHub** (make sure .gitignore is working)
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit: Complete task tracker"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git push -u origin main
+   ```
+
+2. **Create Render account**
+   - Go to [render.com](https://render.com)
+   - Sign up using your GitHub account
+
+3. **Create new Static Site**
+   - Click "New +" → "Static Site"
+   - Connect your GitHub repository
+   - Select your task-tracker repository
+
+4. **Configure build settings**
+   ```
+   Name: task-tracker (or your preferred name)
+   Branch: main
+   Root Directory: (leave empty)
+   Build Command: npm run build
+   Publish Directory: build
+   ```
+
+5. **Advanced Settings** (if needed)
+   ```
+   Node Version: 16 (or latest LTS)
+   Environment Variables: (none needed for this project)
+   ```
+
+6. **Deploy**
+   - Click "Create Static Site"
+   - Render will automatically build and deploy your app
+   - You'll get a URL like: `https://your-app-name.onrender.com`
+
+### Render Configuration File (Optional)
+
+Create `render.yaml` in your project root for advanced configuration:
+
+```yaml
+services:
+  - type: web
+    name: task-tracker
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: ./build
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+```
+
+### Render Advantages
+- ✅ **Free tier available** (perfect for this project)
+- ✅ **Automatic deployments** on every git push
+- ✅ **Custom domains** supported
+- ✅ **HTTPS by default**
+- ✅ **Fast global CDN**
+- ✅ **Easy to use dashboard**
+
 ## ⚡ Vercel Deployment
 
 ### Method 1: Vercel CLI

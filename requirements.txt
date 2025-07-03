@@ -22,11 +22,19 @@
 - Test command: npm test
 
 ## Hosting Platforms Supported
-- ✅ Netlify (Recommended)
+- ✅ Render (Recommended - Free tier with auto-deploy)
+- ✅ Netlify 
 - ✅ Vercel  
 - ✅ GitHub Pages
 - ✅ Heroku
 - ✅ Firebase Hosting
+
+## Render Deployment Settings
+- Build Command: npm run build
+- Publish Directory: build
+- Node Version: 16+ (auto-detected)
+- Environment: Static Site
+- Auto-Deploy: Enabled on git push
 
 ## Browser Support
 - Chrome 88+
