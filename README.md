@@ -29,7 +29,7 @@ This is a comprehensive personal task tracker that allows users to manage their 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/princedabre18s/RYGNeco_web_dev_internship.git
-   cd RYGNeco_web_dev_internship/task-tracker
+   cd RYGNeco_web_dev_internship
    ```
 
 2. **Install dependencies**
@@ -55,7 +55,9 @@ This is a comprehensive personal task tracker that allows users to manage their 
 
 ## 🌟 Live Demo
 
-[Live Demo URL - Will be added after deployment]
+**🚀 [LIVE DEMO: https://rygneco-web-dev-internship.onrender.com](https://rygneco-web-dev-internship.onrender.com)**
+
+*Experience the legendary task tracker in action! The app features a beautiful portfolio-inspired design with all core and bonus features implemented.*
 
 ## 📸 Screenshots
 
