@@ -1,0 +1,40 @@
+# Task Tracker - Deployment Requirements
+
+## Runtime Requirements
+- Node.js >= 14.0.0
+- npm >= 6.0.0
+
+## Production Dependencies
+- react@^18.2.0
+- react-dom@^18.2.0
+- react-scripts@5.0.1
+- web-vitals@^2.1.4
+
+## Development Dependencies  
+- @testing-library/jest-dom@^5.16.4
+- @testing-library/react@^13.3.0
+- @testing-library/user-event@^13.5.0
+
+## Build Configuration
+- Build command: npm run build
+- Output directory: build/
+- Start command: npm start
+- Test command: npm test
+
+## Hosting Platforms Supported
+- ✅ Netlify (Recommended)
+- ✅ Vercel  
+- ✅ GitHub Pages
+- ✅ Heroku
+- ✅ Firebase Hosting
+
+## Browser Support
+- Chrome 88+
+- Firefox 85+ 
+- Safari 14+
+- Edge 88+
+
+## Deployment Size
+- Source code: ~50KB
+- Build output: ~2MB (includes React library)
+- node_modules: ~200MB (dev only, not deployed)
